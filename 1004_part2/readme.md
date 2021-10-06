@@ -348,7 +348,7 @@ https://www.w3schools.com/tags/tag_a.asp
 * 網頁呈現效果 : 
     ![](https://i.imgur.com/ReglksY.png)
 
-## 回家作業
+## 課堂練習
 * 網頁呈現效果 : 
     
     ![](https://i.imgur.com/J2GpMZv.jpg)
@@ -476,3 +476,146 @@ https://www.w3schools.com/tags/tag_a.asp
     </body>
     </html>
     ```
+    
+## 回家作業
+* 網頁呈現效果 : 
+    ![](https://i.imgur.com/x5Eed7H.png)
+
+
+* 程式碼 : 
+    ```
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                font-family: "標楷體";
+            }
+
+            .container {
+                width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .box {
+                width: 100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h1 {
+                color: blueviolet;
+                text-align: center;
+            }
+
+            h2 {
+                color: rgb(240, 89, 8);
+            }
+
+            td,
+            th {
+                width: 150px;
+                text-align: center;
+            }
+
+            table {
+                background-color: cyan;
+            }
+
+            .green {
+                background-color: rgb(192, 250, 104);
+            }
+
+            ol.b {
+                list-style-type: cjk-ideographic;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <h1>員工家庭日活動企劃書</h1>
+            <h2>活動對象:</h2>公司全體員工及眷屬
+            <h2>主辦單位:</h2>福利委員會
+            <h2>活動時間:</h2>早上8：30 ~ 18：00
+            <h2>活動地點:</h2>台北大佳河濱公園
+            <h2>活動費用:</h2>由公司福利委員會全額支付
+            <h2>活動目的:</h2>
+            響應節能減碳愛地球，提倡健康休閒活動，且經由活動強化凝聚力，進而提高員工的和諧氛圍，可以透過騎自行車、園遊會或兒童團康活動貼近大自然。
+            <h2>活動內容:</h2>
+            <ul class="green">
+                <li>騎自行車</li>
+                <li>園遊會</li>
+                <li>團康活動</li>
+            </ul>
+            <h2>活動流程表:</h2>
+            <table border='1px' cellspacing='0'>
+                <tr>
+                    <th>時間</th>
+                    <th>活動名稱</th>
+                    <th>參與人員</th>
+                </tr>
+                <tr>
+                    <td>8:30~9:00</td>
+                    <td>報到</td>
+                    <td>全員</td>
+
+                </tr>
+                <tr>
+                    <td>9:30~10:00</td>
+                    <td>暖身操、自行車出發</td>
+                    <td>大人及4歲以上兒童</td>
+                </tr>
+                <tr>
+                    <td>10:30~15:00</td>
+                    <td>園遊會</td>
+                    <td>全員</td>
+                </tr>
+                <tr>
+                    <td>15:00~16:00</td>
+                    <td>兒童團康活動</td>
+                    <td>3歲以上兒童</td>
+                </tr>
+                <tr>
+                    <td>16:00~17:00</td>
+                    <td>員工團康活動</td>
+                    <td>公司員工</td>
+                </tr>
+                <tr>
+                    <td>17:00~18:00</td>
+                    <td>抽獎時間</td>
+                    <td>公司員工</td>
+                </tr>
+                <tr>
+
+                    <td>18:00</td>
+                    <td>活動結束, 散會</td>
+                    <td></td>
+                </tr>
+            </table><br><br>
+
+
+            <h2>交通資訊：</h2>
+            <ul>
+                <li>地址：台北市中山區基隆河大直橋至中山橋</li>
+                <li>大眾運輸：</li>
+                <li>捷運：搭乘捷運淡水線至圓山站下車→轉搭102.103路市車至9號水門大佳國小站下車→步行即可達大佳河濱公園</li>
+                <li>公車：搭乘33、72、222、286、RL34路市公車→至大佳國小站下車→步行即可達大佳河濱公園</li>
+                <li>自行開車：</li>
+                <P>建國北路往北至濱江街方向→進入九號水門大佳國小即可到達</P>
+                <P>國道一號下濱江交流道出口右轉→沿大佳河濱公園進入九號水門即可到達</P>
+            </ul>
+
+        </div>
+    </body>
+
+    </html>
+    ```
+    
