@@ -63,55 +63,55 @@
     ![](https://i.imgur.com/ioDpOHc.gif)
     > [name=Web_Haung]
 * 程式碼 : 
-```
-import numpy as np
+    ```python
+    import numpy as np
 
-def getYa(x1,x2,w1,w2,Theta):
-    if x1*w1+x2*w2>Theta:
-        print(x1,'X',w1,'+',x2,'X',w2,'>',Theta,'Ya=1')
-        return 1
-    else: 
-        print(x1,'X',w1,'+',x2,'X',w2,'<=',Theta,'Ya=0')
-        return 0
-def gete(yd,ya):
-    return np.round( yd-ya)
+    def getYa(x1,x2,w1,w2,Theta):
+        if x1*w1+x2*w2>Theta:
+            print(x1,'X',w1,'+',x2,'X',w2,'>',Theta,'Ya=1')
+            return 1
+        else: 
+            print(x1,'X',w1,'+',x2,'X',w2,'<=',Theta,'Ya=0')
+            return 0
+    def gete(yd,ya):
+        return np.round( yd-ya)
 
-if __name__ == '__main__':
-    w1=np.round( float(input('w1:')),4)
-    w2=np.round( float(input('w2:')),4)
-    Theta=np.round( float(input('Theta:')),4)
-    yd=input('輸入Yd :')
-    yd=[int(n) for n in yd.split()]
-    index=0
-    check_count=1
-    while 1:
-        print('-------------------------')
-        if index==4:
-            index=0
-        x1=np.round( float(input('x1:')),4)
-        x2=np.round( float(input('x2:')),4)
-        ya=getYa(x1,x2,w1,w2,Theta)
-        e=gete(yd[index],ya)
-        # index=index+1
-        print('目前Yd :',yd[index],'，Ya :',ya,'e=Yd-Ya')
+    if __name__ == '__main__':
+        w1=np.round( float(input('w1:')),4)
+        w2=np.round( float(input('w2:')),4)
+        Theta=np.round( float(input('Theta:')),4)
+        yd=input('輸入Yd :')
+        yd=[int(n) for n in yd.split()] #字串轉陣列
+        index=0 #用來決定致一輪要拿幾個Yd
+        check_count=1
+        while 1:
+            print('-------------------------')
+            if index==4:
+                index=0
+                
+            x1=np.round( float(input('x1:')),4)
+            x2=np.round( float(input('x2:')),4)
+            ya=getYa(x1,x2,w1,w2,Theta)
+            e=gete(yd[index],ya)
+            print('目前Yd :',yd[index],'，Ya :',ya,'e=Yd-Ya')
 
-        if e!=0:
-            w1=np.round(w1+0.2*x1*e,4)
-            w2=np.round(w2+0.2*x2*e,4)
-            check_count=0
-            print('誤差',e,'，修正')
-        else:
-            print('誤差0，不修正')
-            check_count=check_count+1
-            index=index+1
-    
-        print('w1 : ',w1,'/w2 : ',w2)
-        if check_count==4:
-            print('-----------答--------------')
-            print('  w1 : ',w1,'/w2 : ',w2)
-            break
-    
-```
+            if e!=0:
+                w1=np.round(w1+0.2*x1*e,4)
+                w2=np.round(w2+0.2*x2*e,4)
+                check_count=0
+                print('誤差',e,'，修正')
+            else:
+                print('誤差0，不修正')
+                check_count=check_count+1
+                index=index+1
+
+            print('w1 : ',w1,'/w2 : ',w2)
+            if check_count==4:
+                print('-----------答--------------')
+                print('  w1 : ',w1,'/w2 : ',w2)
+                break
+
+    ```
 ## 截圖區
 ![](https://i.imgur.com/AGE1ekH.png)
 
